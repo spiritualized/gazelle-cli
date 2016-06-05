@@ -47,7 +47,6 @@ Edit `config.py`, ensuring you at minimum fill in the domain and login details f
 ## Example usage
 
 * Download all torrents with an artist of "Melt-Banana"
-``python gazelle-cli --artist "Melt-Banana"
 
 `(venv) python gazelle-cli.py --artist "Melt Banana"`
 
