@@ -1,0 +1,1 @@
+This folder is used when gazellecli is used in .torrent file writing mode.

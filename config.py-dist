@@ -1,0 +1,65 @@
+# *~*~*~*~*~* CONFIGURATION *~*~*~*~*~*~*~
+
+# root domain of your gazelle site, no trailing slash
+gazelle_url = "https://gazelle.domain"
+
+script_mode = "rutorrent" # one of "file", "rutorrent", "utorrent", "deluge", "transmission"
+
+# gazelle site credentials
+gazelle_username = "user"
+gazelle_password = "password"
+
+# torrent file write path - optional, fill in if you want to dump out .torrent files
+# relative example:	torrent_write_path = "./files"
+# absolute example: torrent_write_path = "c:\\files"
+torrent_write_path = "./files"
+# torrent_write_path = "c:\\torrents\\files"
+
+# rutorrent - optional, fill in if you use rtorrent+rutorrent webgui
+rutorrent_url = "http://seedbox.domain/rutorrent"
+rutorrent_username = "rtuser"
+rutorrent_password = "rtpass"
+rutorrent_download_dir = "/home/rtuser/music"		# fully qualified, no symlinks, no trailing /
+rutorrent_add_stopped = True
+rutorrent_label = "gazellecli"
+
+# uTorrent - optional, fill in if you are using uTorrent's webUI
+utorrent_host = "localhost:10000"
+utorrent_username = "admin"
+utorrent_password = "admin"
+utorrent_download_dir = "C:\\Music"
+utorrent_add_stopped = True
+
+# deluge - optional, fill in if you are using deluge
+deluge_url = "http://localhost:8112"
+deluge_password = "deluge"
+deluge_download_dir = "C:\\Music"
+deluge_add_stopped = True
+
+# transmission - optional, fill in if you are using transmission
+transmission_host = "http://localhost:9091"
+transmission_username = "test"
+transmission_password = "password"
+transmission_download_dir = "/tmp/test/"
+transmission_add_stopped = True
+
+# mysql - optional, fill if you are using a MySQL server for the script to store persistant data
+use_mysql = False
+mysql_host = "localhost"
+mysql_db = "gazelle_cli"
+mysql_username = "root"
+mysql_password = "mysqlroot"
+
+# torrent selection order
+encoding_order = ["V0 (VBR)", "V1 (VBR)", "V2 (VBR)", "320", "256", "Lossless", "24bit Lossless"]
+media_order = ["CD", "WEB", "Vinyl"]
+grab_format = "MP3"  # one of "MP3", "FLAC" "AAC"
+
+# ~*~*~*~*~**~* Configuration stuff you probably don't need to change *~*~*~*~*
+
+rtorrent_path_sep = "/"		# rtorrent on windows!? sacrilege.
+always_grab = False			# override artist page caching.
+always_reparse = False		# override rescan of page dump
+
+
+# *~*~*~* END OF CONFIGURATION *~*~*~*~*~*
